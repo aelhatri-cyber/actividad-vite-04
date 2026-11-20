@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/Deltarune_icon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#141e30">
+  <title>Rincon de los Bosses Secretos</title>
+</head>
+<body>
+  <header>
+    <h1>Rincon de los Bosses Secretos</h1>
+    <p>Selecciona tu canción favorita y disfruta de la música.</p>
+  </header>
+  <main>
+    <label for="selector">Selecciona una canción:</label>
+
+    <select id="selector">
+      <option value="">Elige una canción</option>
+      <option value="1">Jevil</option>
+      <option value="2">Spamton NEO</option>
+      <option value="3">ERAM</option>
+      <option value="4">Roaring Knight</option>
+      <option value="5">Gerson</option>
+      <option value="6">Pink</option>
+    </select>
+
+    <div id="tarjeta" class="tarjeta">
+      <img id="imagen" src="" alt="" hidden>
+
+      <h2 id="titulo">¡Bienvenido!</h2>
+
+      <p id="descripcion">Selecciona una canción en el menú desplegable para comenzar a escuchar música.</p>
+
+      <audio id="reproductor" controls preload="none">Tu navegador no soporta la reproducción de audio.</audio>
+
+      <p id="estado" class="estado" aria-live="polite"></p>
+    </div>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
